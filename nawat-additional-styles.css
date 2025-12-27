@@ -1,0 +1,90 @@
+/* 
+   Additional CSS for Nawat Mubaraka Integration
+   Add these styles to the existing style.css file
+*/
+
+/* Floating Action Button */
+.floating-action-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.5);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+.floating-action-btn:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 6px 25px rgba(139, 69, 19, 0.7);
+}
+
+.fab-icon {
+    font-size: 1.5rem;
+}
+
+.fab-text {
+    font-size: 1rem;
+}
+
+/* Hero Platform Button */
+.btn-platform {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%) !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.btn-platform:hover {
+    background: linear-gradient(135deg, #A0522D 0%, #8B4513 100%) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.5);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(139, 69, 19, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(139, 69, 19, 0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .floating-action-btn {
+        bottom: 20px;
+        left: 20px;
+        padding: 0.75rem 1rem;
+    }
+    
+    .fab-text {
+        display: none;
+    }
+    
+    .fab-icon {
+        font-size: 1.8rem;
+    }
+}
+
+/* For RTL layout adjustments */
+[dir="rtl"] .floating-action-btn {
+    left: auto;
+    right: 30px;
+}
+
+@media (max-width: 768px) {
+    [dir="rtl"] .floating-action-btn {
+        left: auto;
+        right: 20px;
+    }
+}
