@@ -3,93 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة نوى التمر - تبرع، اشترِ، شارك</title>
+    <title>نواة مباركة | Nawat Mubaraka - مبادرة وقفية مبتكرة</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="header">
         <nav class="navbar">
             <div class="container">
-                <h1 class="logo">🌴 منصة نوى التمر</h1>
-                <ul class="nav-links">
-                    <li><a href="https://8000-iupr50gt0002914wdfn6v-cc2fbc16.sandbox.novita.ai/" target="_blank">نواة مباركة</a></li>
-                    <li><a href="#home">الرئيسية</a></li>
+                <div class="logo">
+                    <div class="logo-icon">🌱</div>
+                    <h1>نواة مباركة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#about">عن المبادرة</a></li>
+                    <li><a href="#problem">المشكلة</a></li>
+                    <li><a href="#solution">الحل</a></li>
                     <li><a href="#donate">تبرع</a></li>
                     <li><a href="#buy">اشترِ</a></li>
                     <li><a href="#partner">شارك</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-banner">
-                    <span class="banner-icon">🌱</span>
-                    <span>جزء من مبادرة</span>
-                    <a href="https://8000-iupr50gt0002914wdfn6v-cc2fbc16.sandbox.novita.ai/" target="_blank" class="banner-link">نواة مباركة</a>
-                    <span>- مبادرة وقفية مبتكرة</span>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">مبادرة وقفية مبتكرة</div>
+                <h1 class="hero-title">نواة مباركة</h1>
+                <p class="hero-subtitle">من تمرة إلى استدامة... رحلة النواة من الإهدار إلى الابتكار</p>
+                <p class="hero-description">
+                    مبادرة وقفية مبتكرة تهدف إلى جمع نوى التمر التي تُهدر عادة بعد موائد الإفطار في الحرم النبوي الشريف، 
+                    وإعادة تدويرها لإيجاد أثر مجتمعي مستدام وبيئي واقتصادي
+                </p>
+                <div class="hero-cta">
+                    <a href="#donate" class="btn btn-primary">تبرع الآن</a>
+                    <a href="#buy" class="btn btn-secondary">اشترِ نوى التمر</a>
+                    <a href="#about" class="btn btn-outline">اكتشف المزيد</a>
                 </div>
-                <h2>حوّل نوى التمر إلى موارد مستدامة</h2>
-                <p>انضم إلى مهمتنا لجمع ومعالجة وتوزيع نوى التمر لأغراض مستدامة</p>
                 <div class="hero-stats">
-                    <div class="stat">
-                        <h3 id="total-donations">0</h3>
-                        <p>التبرعات</p>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">إعادة تدوير</div>
                     </div>
-                    <div class="stat">
-                        <h3 id="total-purchases">0</h3>
-                        <p>المشتريات</p>
+                    <div class="stat-item">
+                        <div class="stat-number">صفر</div>
+                        <div class="stat-label">نفايات</div>
                     </div>
-                    <div class="stat">
-                        <h3 id="total-partnerships">0</h3>
-                        <p>الشراكات</p>
+                    <div class="stat-item">
+                        <div class="stat-number">2030</div>
+                        <div class="stat-label">رؤية المملكة</div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Nawat Mubaraka Section -->
-        <section id="about-nawat" class="section bg-light">
-            <div class="container">
-                <h2>عن مبادرة نواة مباركة</h2>
-                <div class="nawat-content">
-                    <div class="nawat-description">
-                        <p>مبادرة وقفية مبتكرة تهدف إلى جمع نوى التمر التي تُهدر عادة بعد موائد الإفطار في الحرم النبوي الشريف، وإعادة تدويرها لإيجاد أثر مجتمعي مستدام وبيئي واقتصادي.</p>
-                        <p><strong>رؤيتنا:</strong> من تمرة إلى استدامة... رحلة النواة من الإهدار إلى الابتكار</p>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-donations">0</div>
+                        <div class="stat-label">التبرعات</div>
                     </div>
-                    <div class="nawat-features">
-                        <div class="feature-item">
-                            <span class="feature-icon">♻️</span>
-                            <h3>100% إعادة تدوير</h3>
-                            <p>تحويل النفايات إلى موارد قيمة</p>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">🌍</span>
-                            <h3>صفر نفايات</h3>
-                            <p>نحو بيئة نظيفة ومستدامة</p>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">🎯</span>
-                            <h3>رؤية 2030</h3>
-                            <p>متوافق مع رؤية المملكة</p>
-                        </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-purchases">0</div>
+                        <div class="stat-label">المشتريات</div>
                     </div>
-                    <div class="nawat-cta">
-                        <a href="https://8000-iupr50gt0002914wdfn6v-cc2fbc16.sandbox.novita.ai/" target="_blank" class="btn btn-primary">تعرف على المبادرة الكاملة</a>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-partnerships">0</div>
+                        <div class="stat-label">الشراكات</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <!-- Donation Section -->
-        <section id="donate" class="section">
-            <div class="container">
-                <h2>تبرع بنوى التمر</h2>
-                <p class="section-description">هل لديك نوى تمر تود التبرع به؟ ساعدنا في إنشاء منتجات مستدامة!</p>
-                <form id="donation-form" class="form">
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">عن المبادرة</span>
+                <h2 class="section-title">فلسفة وهوية "نواة مباركة"</h2>
+                <p class="section-description">
+                    مبادرة تجمع بين الأصالة والعصرنة، تحول النواة الصغيرة إلى قيمة مضافة مستدامة
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>القيمة الروحية</h3>
+                    <p>التركيز على كلمة "مباركة" وعبارة "ينمو بالأجر" يحدد هوية المشروع كيان غير ربحي موجه بالثواب والبركة</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>النمو والاستدامة</h3>
+                    <p>بذرة صغيرة تُغرس في الأرض فتنمو وتتفتح لتثمر أجراً مستدام، استعارة بصرية ولفظية لدورة حياة الوقف</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>الهوية البصرية</h3>
+                    <p>تصميم عصري يعكس القيم الإسلامية والبيئية مع الحفاظ على البساطة والوضوح</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">المشكلة</span>
+                <h2 class="section-title">تحدي نوى التمر في الحرم النبوي</h2>
+            </div>
+
+            <div class="problem-content">
+                <div class="problem-stats">
+                    <div class="stat-box">
+                        <div class="stat-icon">📊</div>
+                        <h3>3 أطنان</h3>
+                        <p>يومياً من نوى التمر</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">🗓️</div>
+                        <h3>1000 طن</h3>
+                        <p>سنوياً من النفايات</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">🌍</div>
+                        <h3>صفر</h3>
+                        <p>استفادة حالياً</p>
+                    </div>
+                </div>
+
+                <div class="problem-text">
+                    <p>يُهدر يومياً في الحرم النبوي الشريف كميات كبيرة من نوى التمر بعد موائد الإفطار الرمضانية والتمور اليومية، مما يشكل تحدياً بيئياً واقتصادياً كبيراً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">الحل</span>
+                <h2 class="section-title">منظومة متكاملة لإعادة التدوير</h2>
+            </div>
+
+            <div class="solution-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>الجمع والفرز</h3>
+                        <p>جمع نوى التمر من الحرم النبوي وفرزه وتنظيفه</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>المعالجة والتحويل</h3>
+                        <p>تحويل النوى إلى منتجات قيمة ومستدامة</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>التوزيع والبيع</h3>
+                        <p>توزيع المنتجات وإعادة استثمار العوائد</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>الأثر المستدام</h3>
+                        <p>خلق قيمة مجتمعية واقتصادية وبيئية مستدامة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donate section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">تبرع</span>
+                <h2 class="section-title">تبرع بنوى التمر</h2>
+                <p class="section-description">هل لديك نوى تمر؟ ساعدنا في إنشاء منتجات مستدامة وأجر مستمر</p>
+            </div>
+
+            <form id="donation-form" class="form">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="donate-name">اسمك *</label>
                         <input type="text" id="donate-name" required>
@@ -98,6 +215,9 @@
                         <label for="donate-email">البريد الإلكتروني *</label>
                         <input type="email" id="donate-email" required>
                     </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group">
                         <label for="donate-quantity">الكمية التقريبية (كجم) *</label>
                         <input type="number" id="donate-quantity" min="1" required>
@@ -106,28 +226,44 @@
                         <label for="donate-location">الموقع *</label>
                         <input type="text" id="donate-location" required>
                     </div>
-                    <div class="form-group">
-                        <label for="donate-message">رسالة إضافية</label>
-                        <textarea id="donate-message" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">إرسال التبرع</button>
-                </form>
-                <div id="donation-success" class="success-message" style="display:none;">
-                    ✅ شكراً لك على تبرعك! سنتواصل معك قريباً.
+                </div>
+
+                <div class="form-group">
+                    <label for="donate-message">رسالة إضافية</label>
+                    <textarea id="donate-message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">إرسال التبرع</button>
+            </form>
+
+            <div id="donation-success" class="success-message" style="display:none;">
+                ✅ شكراً لك على تبرعك! سنتواصل معك قريباً.
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section id="buy" class="buy section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">اشترِ</span>
+                <h2 class="section-title">شراء نوى التمر</h2>
+                <p class="section-description">هل تحتاج نوى التمر لمشروعك أو عملك؟ اطلب من هنا!</p>
+            </div>
+
+            <div class="price-info">
+                <div class="price-item">
+                    <span class="price-label">السعر:</span>
+                    <span class="price-value">5 دولار للكيلوجرام</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">الحد الأدنى للطلب:</span>
+                    <span class="price-value">10 كجم</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Purchase Section -->
-        <section id="buy" class="section bg-light">
-            <div class="container">
-                <h2>شراء نوى التمر</h2>
-                <p class="section-description">هل تحتاج نوى التمر لمشروعك أو عملك؟ اطلب من هنا!</p>
-                <div class="price-info">
-                    <p><strong>السعر:</strong> 5 دولار للكيلوجرام</p>
-                    <p><strong>الحد الأدنى للطلب:</strong> 10 كجم</p>
-                </div>
-                <form id="purchase-form" class="form">
+            <form id="purchase-form" class="form">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="buy-name">اسمك *</label>
                         <input type="text" id="buy-name" required>
@@ -136,6 +272,9 @@
                         <label for="buy-email">البريد الإلكتروني *</label>
                         <input type="email" id="buy-email" required>
                     </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group">
                         <label for="buy-phone">رقم الهاتف *</label>
                         <input type="tel" id="buy-phone" required>
@@ -144,41 +283,58 @@
                         <label for="buy-quantity">الكمية (كجم) *</label>
                         <input type="number" id="buy-quantity" min="10" required>
                     </div>
-                    <div class="form-group">
-                        <label for="buy-address">عنوان التوصيل *</label>
-                        <textarea id="buy-address" rows="3" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <p class="total-price">السعر الإجمالي: <span id="total-price">0</span> دولار</p>
-                    </div>
-                    <button type="submit" class="btn btn-primary">تأكيد الطلب</button>
-                </form>
-                <div id="purchase-success" class="success-message" style="display:none;">
-                    ✅ تم استلام طلبك! سنتواصل معك لتأكيد الدفع والتوصيل.
+                </div>
+
+                <div class="form-group">
+                    <label for="buy-address">عنوان التوصيل *</label>
+                    <textarea id="buy-address" rows="3" required></textarea>
+                </div>
+
+                <div class="total-price-display">
+                    <span>السعر الإجمالي:</span>
+                    <span class="total-amount"><span id="total-price">0</span> دولار</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">تأكيد الطلب</button>
+            </form>
+
+            <div id="purchase-success" class="success-message" style="display:none;">
+                ✅ تم استلام طلبك! سنتواصل معك لتأكيد الدفع والتوصيل.
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partner" class="partner section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">شارك</span>
+                <h2 class="section-title">فرص الشراكة</h2>
+                <p class="section-description">انضم إلينا كشريك في مبادرة نواة مباركة المستدامة</p>
+            </div>
+
+            <div class="partnership-types">
+                <div class="partnership-card">
+                    <div class="card-icon">📦</div>
+                    <h3>شريك جمع</h3>
+                    <p>ساعدنا في جمع نوى التمر من منطقتك</p>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>شريك معالجة</h3>
+                    <p>حوّل نوى التمر إلى منتجات قيمة</p>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="card-icon">🚚</div>
+                    <h3>شريك توزيع</h3>
+                    <p>وزّع المنتجات على المستخدمين النهائيين</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Partnership Section -->
-        <section id="partner" class="section">
-            <div class="container">
-                <h2>فرص الشراكة</h2>
-                <p class="section-description">انضم إلينا كشريك في مبادرة نوى التمر المستدامة</p>
-                <div class="partnership-types">
-                    <div class="partnership-card">
-                        <h3>شريك جمع</h3>
-                        <p>ساعدنا في جمع نوى التمر من منطقتك</p>
-                    </div>
-                    <div class="partnership-card">
-                        <h3>شريك معالجة</h3>
-                        <p>حوّل نوى التمر إلى منتجات قيمة</p>
-                    </div>
-                    <div class="partnership-card">
-                        <h3>شريك توزيع</h3>
-                        <p>وزّع المنتجات على المستخدمين النهائيين</p>
-                    </div>
-                </div>
-                <form id="partnership-form" class="form">
+            <form id="partnership-form" class="form">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="partner-org">اسم المؤسسة *</label>
                         <input type="text" id="partner-org" required>
@@ -187,6 +343,9 @@
                         <label for="partner-contact">الشخص المسؤول *</label>
                         <input type="text" id="partner-contact" required>
                     </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group">
                         <label for="partner-email">البريد الإلكتروني *</label>
                         <input type="email" id="partner-email" required>
@@ -195,56 +354,130 @@
                         <label for="partner-phone">رقم الهاتف *</label>
                         <input type="tel" id="partner-phone" required>
                     </div>
-                    <div class="form-group">
-                        <label for="partner-type">نوع الشراكة *</label>
-                        <select id="partner-type" required>
-                            <option value="">اختر النوع</option>
-                            <option value="collection">شريك جمع</option>
-                            <option value="processing">شريك معالجة</option>
-                            <option value="distribution">شريك توزيع</option>
-                            <option value="other">أخرى</option>
-                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="partner-type">نوع الشراكة *</label>
+                    <select id="partner-type" required>
+                        <option value="">اختر النوع</option>
+                        <option value="collection">شريك جمع</option>
+                        <option value="processing">شريك معالجة</option>
+                        <option value="distribution">شريك توزيع</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="partner-website">الموقع الإلكتروني</label>
+                    <input type="url" id="partner-website">
+                </div>
+
+                <div class="form-group">
+                    <label for="partner-description">أخبرنا عن مؤسستك واهتمامك بالشراكة *</label>
+                    <textarea id="partner-description" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">إرسال طلب الشراكة</button>
+            </form>
+
+            <div id="partnership-success" class="success-message" style="display:none;">
+                ✅ تم إرسال طلب الشراكة! سنراجعه ونعود إليك قريباً.
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">تواصل معنا</span>
+                <h2 class="section-title">نسعد بتواصلك معنا</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>الهاتف</h4>
+                            <p>+966 53 354 1092</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="partner-website">الموقع الإلكتروني</label>
-                        <input type="url" id="partner-website">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕌</div>
+                        <div class="contact-details">
+                            <h4>الموقع</h4>
+                            <p>الحرم النبوي الشريف</p>
+                            <p>المدينة المنورة</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="partner-description">أخبرنا عن مؤسستك واهتمامك بالشراكة *</label>
-                        <textarea id="partner-description" rows="4" required></textarea>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🇸🇦</div>
+                        <div class="contact-details">
+                            <h4>الدولة</h4>
+                            <p>المملكة العربية السعودية</p>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">إرسال طلب الشراكة</button>
-                </form>
-                <div id="partnership-success" class="success-message" style="display:none;">
-                    ✅ تم إرسال طلب الشراكة! سنراجعه ونعود إليك قريباً.
+                </div>
+
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <p>الحرم النبوي الشريف</p>
+                        <p>المدينة المنورة</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>منصة نوى التمر</h3>
-                    <p>نبني مستقبلاً مستداماً، نواة تمر تلو الأخرى. 🌱</p>
+                    <div class="footer-logo">
+                        <div class="logo-icon">🌱</div>
+                        <h3>نواة مباركة</h3>
+                    </div>
+                    <p>مبادرة وقفية مبتكرة لتحويل نوى التمر إلى قيمة مستدامة تخدم المجتمع والبيئة</p>
                 </div>
+
                 <div class="footer-section">
-                    <h3>روابط سريعة</h3>
-                    <ul class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#about">عن المبادرة</a></li>
                         <li><a href="#donate">تبرع</a></li>
                         <li><a href="#buy">اشترِ</a></li>
                         <li><a href="#partner">شارك</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h3>المبادرة</h3>
-                    <p>جزء من <a href="https://8000-iupr50gt0002914wdfn6v-cc2fbc16.sandbox.novita.ai/" target="_blank" class="footer-highlight">مبادرة نواة مباركة</a></p>
-                    <p>مبادرة وقفية مبتكرة</p>
+                    <h4>قيمنا</h4>
+                    <ul>
+                        <li>♻️ الاستدامة البيئية</li>
+                        <li>🔄 الاقتصاد الدائري</li>
+                        <li>🤝 الأثر المجتمعي</li>
+                        <li>💡 الابتكار والتطوير</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>اتصل بنا</h4>
+                    <ul>
+                        <li>📱 +966 53 354 1092</li>
+                        <li>🕌 الحرم النبوي الشريف</li>
+                        <li>🇸🇦 المملكة العربية السعودية</li>
+                    </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 منصة نوى التمر. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 نواة مباركة. جميع الحقوق محفوظة</p>
+                <p>متوافق مع رؤية المملكة 2030 | نبني مستقبلاً مستداماً 🌱</p>
             </div>
         </div>
     </footer>
