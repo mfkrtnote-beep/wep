@@ -65,6 +65,37 @@ body {
     text-align: center;
 }
 
+.hero-banner {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.banner-icon {
+    font-size: 1.5rem;
+}
+
+.banner-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.banner-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -253,16 +284,119 @@ body {
     }
 }
 
+/* About Nawat Mubaraka Section */
+.nawat-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nawat-description {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.nawat-description p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.nawat-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    color: #8B4513;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.feature-item p {
+    color: #666;
+}
+
+.nawat-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 /* Footer */
 footer {
     background: #333;
     color: white;
-    text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
 
-footer p {
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: #CD853F;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #CD853F;
+}
+
+.footer-highlight {
+    color: #CD853F;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-highlight:hover {
+    color: #D2691E;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
     margin: 0.5rem 0;
 }
 
