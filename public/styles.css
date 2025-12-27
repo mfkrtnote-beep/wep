@@ -100,6 +100,7 @@ body {
     height: 60px;
     width: auto;
     object-fit: contain;
+    max-width: 250px;
 }
 
 .nav-menu {
@@ -169,8 +170,9 @@ body {
 }
 
 .hero-logo-image {
-    height: 180px;
+    max-height: 200px;
     width: auto;
+    max-width: 500px;
     object-fit: contain;
     filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.3));
 }
@@ -710,8 +712,9 @@ body {
 .footer-logo-image {
     height: 80px;
     width: auto;
+    max-width: 300px;
     object-fit: contain;
-    filter: brightness(1.2);
+    filter: brightness(1.3) contrast(1.1);
 }
 
 .footer-section h3,
