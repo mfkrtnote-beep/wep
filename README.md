@@ -1,6 +1,27 @@
-# 🌴 Date Pits Platform
+# 🌴 منصة نوى التمر | Date Pits Platform
 
-A comprehensive web platform for donating, buying, and partnering in date pits collection and distribution. This platform enables sustainable resource management by connecting donors, buyers, and partners in the date pits ecosystem.
+A comprehensive web platform for donating, buying, and partnering in date pits collection and distribution. This platform is part of the **Nawat Mubaraka (نواة مباركة)** initiative - an innovative endowment project.
+
+## 🌱 About Nawat Mubaraka Initiative
+
+This platform is integrated with the [Nawat Mubaraka website](https://8000-iupr50gt0002914wdfn6v-cc2fbc16.sandbox.novita.ai/), an innovative endowment initiative that aims to collect date pits that are usually wasted after Iftar meals in the Prophet's Mosque, and recycle them to create sustainable community, environmental, and economic impact.
+
+**Vision:** From a date to sustainability... the journey of the pit from waste to innovation
+
+## 🌐 Integration with Nawat Mubaraka
+
+The platform features seamless integration with the main Nawat Mubaraka initiative:
+
+- **Navigation Link**: Direct link to Nawat Mubaraka website in the main navigation
+- **Hero Banner**: Prominent banner showcasing the partnership
+- **Dedicated Section**: Complete information about the Nawat Mubaraka initiative
+- **Footer Links**: Multiple touchpoints connecting to the main initiative
+- **Brand Consistency**: Aligned with Nawat Mubaraka's mission and values
+
+### Key Features of Nawat Mubaraka:
+- ♻️ **100% Recycling**: Converting waste into valuable resources
+- 🌍 **Zero Waste**: Towards a clean and sustainable environment
+- 🎯 **Vision 2030**: Aligned with Saudi Arabia's Vision 2030
 
 ## Features
 
@@ -35,8 +56,10 @@ A comprehensive web platform for donating, buying, and partnering in date pits c
 
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
 - **Backend**: Node.js with Express.js
-- **Styling**: Custom CSS with responsive design
+- **Language**: Full Arabic support with RTL (Right-to-Left) layout
+- **Styling**: Custom CSS with responsive design and Arabic fonts
 - **Data Storage**: In-memory storage (can be upgraded to database)
+- **Integration**: Connected with Nawat Mubaraka main website
 
 ## Installation
 
