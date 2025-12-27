@@ -47,11 +47,11 @@ document.getElementById('donation-form').addEventListener('submit', async (e) =>
             }, 5000);
             updateStats();
         } else {
-            alert('Error submitting donation. Please try again.');
+            alert('خطأ في إرسال التبرع. يرجى المحاولة مرة أخرى.');
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('Error submitting donation. Please try again.');
+        alert('خطأ في إرسال التبرع. يرجى المحاولة مرة أخرى.');
     }
 });
 
@@ -62,7 +62,7 @@ document.getElementById('purchase-form').addEventListener('submit', async (e) =>
     const quantity = parseInt(document.getElementById('buy-quantity').value);
     
     if (quantity < 10) {
-        alert('Minimum order is 10 kg');
+        alert('الحد الأدنى للطلب هو 10 كجم');
         return;
     }
 
@@ -92,11 +92,11 @@ document.getElementById('purchase-form').addEventListener('submit', async (e) =>
             }, 5000);
             updateStats();
         } else {
-            alert('Error submitting purchase. Please try again.');
+            alert('خطأ في إرسال الطلب. يرجى المحاولة مرة أخرى.');
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('Error submitting purchase. Please try again.');
+        alert('خطأ في إرسال الطلب. يرجى المحاولة مرة أخرى.');
     }
 });
 
@@ -131,11 +131,11 @@ document.getElementById('partnership-form').addEventListener('submit', async (e)
             }, 5000);
             updateStats();
         } else {
-            alert('Error submitting partnership request. Please try again.');
+            alert('خطأ في إرسال طلب الشراكة. يرجى المحاولة مرة أخرى.');
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('Error submitting partnership request. Please try again.');
+        alert('خطأ في إرسال طلب الشراكة. يرجى المحاولة مرة أخرى.');
     }
 });
 

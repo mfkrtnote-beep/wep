@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date Pits Platform - Donate, Buy, Partner</title>
+    <title>منصة نوى التمر - تبرع، اشترِ، شارك</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <h1 class="logo">🌴 Date Pits Platform</h1>
+                <h1 class="logo">🌴 منصة نوى التمر</h1>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#donate">Donate</a></li>
-                    <li><a href="#buy">Buy</a></li>
-                    <li><a href="#partner">Partner</a></li>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#donate">تبرع</a></li>
+                    <li><a href="#buy">اشترِ</a></li>
+                    <li><a href="#partner">شارك</a></li>
                 </ul>
             </div>
         </nav>
@@ -25,20 +25,20 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container">
-                <h2>Turn Date Pits Into Sustainable Resources</h2>
-                <p>Join our mission to collect, process, and distribute date pits for sustainable purposes</p>
+                <h2>حوّل نوى التمر إلى موارد مستدامة</h2>
+                <p>انضم إلى مهمتنا لجمع ومعالجة وتوزيع نوى التمر لأغراض مستدامة</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <h3 id="total-donations">0</h3>
-                        <p>Donations</p>
+                        <p>التبرعات</p>
                     </div>
                     <div class="stat">
                         <h3 id="total-purchases">0</h3>
-                        <p>Purchases</p>
+                        <p>المشتريات</p>
                     </div>
                     <div class="stat">
                         <h3 id="total-partnerships">0</h3>
-                        <p>Partners</p>
+                        <p>الشراكات</p>
                     </div>
                 </div>
             </div>
@@ -47,33 +47,33 @@
         <!-- Donation Section -->
         <section id="donate" class="section">
             <div class="container">
-                <h2>Donate Date Pits</h2>
-                <p class="section-description">Have date pits you'd like to donate? Help us create sustainable products!</p>
+                <h2>تبرع بنوى التمر</h2>
+                <p class="section-description">هل لديك نوى تمر تود التبرع به؟ ساعدنا في إنشاء منتجات مستدامة!</p>
                 <form id="donation-form" class="form">
                     <div class="form-group">
-                        <label for="donate-name">Your Name *</label>
+                        <label for="donate-name">اسمك *</label>
                         <input type="text" id="donate-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="donate-email">Email *</label>
+                        <label for="donate-email">البريد الإلكتروني *</label>
                         <input type="email" id="donate-email" required>
                     </div>
                     <div class="form-group">
-                        <label for="donate-quantity">Approximate Quantity (kg) *</label>
+                        <label for="donate-quantity">الكمية التقريبية (كجم) *</label>
                         <input type="number" id="donate-quantity" min="1" required>
                     </div>
                     <div class="form-group">
-                        <label for="donate-location">Location *</label>
+                        <label for="donate-location">الموقع *</label>
                         <input type="text" id="donate-location" required>
                     </div>
                     <div class="form-group">
-                        <label for="donate-message">Additional Message</label>
+                        <label for="donate-message">رسالة إضافية</label>
                         <textarea id="donate-message" rows="4"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit Donation</button>
+                    <button type="submit" class="btn btn-primary">إرسال التبرع</button>
                 </form>
                 <div id="donation-success" class="success-message" style="display:none;">
-                    ✅ Thank you for your donation! We'll contact you soon.
+                    ✅ شكراً لك على تبرعك! سنتواصل معك قريباً.
                 </div>
             </div>
         </section>
@@ -81,40 +81,40 @@
         <!-- Purchase Section -->
         <section id="buy" class="section bg-light">
             <div class="container">
-                <h2>Buy Date Pits</h2>
-                <p class="section-description">Need date pits for your business or project? Order here!</p>
+                <h2>شراء نوى التمر</h2>
+                <p class="section-description">هل تحتاج نوى التمر لمشروعك أو عملك؟ اطلب من هنا!</p>
                 <div class="price-info">
-                    <p><strong>Price:</strong> $5 per kg</p>
-                    <p><strong>Minimum Order:</strong> 10 kg</p>
+                    <p><strong>السعر:</strong> 5 دولار للكيلوجرام</p>
+                    <p><strong>الحد الأدنى للطلب:</strong> 10 كجم</p>
                 </div>
                 <form id="purchase-form" class="form">
                     <div class="form-group">
-                        <label for="buy-name">Your Name *</label>
+                        <label for="buy-name">اسمك *</label>
                         <input type="text" id="buy-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="buy-email">Email *</label>
+                        <label for="buy-email">البريد الإلكتروني *</label>
                         <input type="email" id="buy-email" required>
                     </div>
                     <div class="form-group">
-                        <label for="buy-phone">Phone Number *</label>
+                        <label for="buy-phone">رقم الهاتف *</label>
                         <input type="tel" id="buy-phone" required>
                     </div>
                     <div class="form-group">
-                        <label for="buy-quantity">Quantity (kg) *</label>
+                        <label for="buy-quantity">الكمية (كجم) *</label>
                         <input type="number" id="buy-quantity" min="10" required>
                     </div>
                     <div class="form-group">
-                        <label for="buy-address">Delivery Address *</label>
+                        <label for="buy-address">عنوان التوصيل *</label>
                         <textarea id="buy-address" rows="3" required></textarea>
                     </div>
                     <div class="form-group">
-                        <p class="total-price">Total Price: $<span id="total-price">0</span></p>
+                        <p class="total-price">السعر الإجمالي: <span id="total-price">0</span> دولار</p>
                     </div>
-                    <button type="submit" class="btn btn-primary">Place Order</button>
+                    <button type="submit" class="btn btn-primary">تأكيد الطلب</button>
                 </form>
                 <div id="purchase-success" class="success-message" style="display:none;">
-                    ✅ Order received! We'll contact you to confirm payment and delivery.
+                    ✅ تم استلام طلبك! سنتواصل معك لتأكيد الدفع والتوصيل.
                 </div>
             </div>
         </section>
@@ -122,61 +122,61 @@
         <!-- Partnership Section -->
         <section id="partner" class="section">
             <div class="container">
-                <h2>Partnership Opportunities</h2>
-                <p class="section-description">Join us as a partner in our sustainable date pits initiative</p>
+                <h2>فرص الشراكة</h2>
+                <p class="section-description">انضم إلينا كشريك في مبادرة نوى التمر المستدامة</p>
                 <div class="partnership-types">
                     <div class="partnership-card">
-                        <h3>Collection Partner</h3>
-                        <p>Help us collect date pits from your area</p>
+                        <h3>شريك جمع</h3>
+                        <p>ساعدنا في جمع نوى التمر من منطقتك</p>
                     </div>
                     <div class="partnership-card">
-                        <h3>Processing Partner</h3>
-                        <p>Transform date pits into valuable products</p>
+                        <h3>شريك معالجة</h3>
+                        <p>حوّل نوى التمر إلى منتجات قيمة</p>
                     </div>
                     <div class="partnership-card">
-                        <h3>Distribution Partner</h3>
-                        <p>Distribute products to end users</p>
+                        <h3>شريك توزيع</h3>
+                        <p>وزّع المنتجات على المستخدمين النهائيين</p>
                     </div>
                 </div>
                 <form id="partnership-form" class="form">
                     <div class="form-group">
-                        <label for="partner-org">Organization Name *</label>
+                        <label for="partner-org">اسم المؤسسة *</label>
                         <input type="text" id="partner-org" required>
                     </div>
                     <div class="form-group">
-                        <label for="partner-contact">Contact Person *</label>
+                        <label for="partner-contact">الشخص المسؤول *</label>
                         <input type="text" id="partner-contact" required>
                     </div>
                     <div class="form-group">
-                        <label for="partner-email">Email *</label>
+                        <label for="partner-email">البريد الإلكتروني *</label>
                         <input type="email" id="partner-email" required>
                     </div>
                     <div class="form-group">
-                        <label for="partner-phone">Phone Number *</label>
+                        <label for="partner-phone">رقم الهاتف *</label>
                         <input type="tel" id="partner-phone" required>
                     </div>
                     <div class="form-group">
-                        <label for="partner-type">Partnership Type *</label>
+                        <label for="partner-type">نوع الشراكة *</label>
                         <select id="partner-type" required>
-                            <option value="">Select Type</option>
-                            <option value="collection">Collection Partner</option>
-                            <option value="processing">Processing Partner</option>
-                            <option value="distribution">Distribution Partner</option>
-                            <option value="other">Other</option>
+                            <option value="">اختر النوع</option>
+                            <option value="collection">شريك جمع</option>
+                            <option value="processing">شريك معالجة</option>
+                            <option value="distribution">شريك توزيع</option>
+                            <option value="other">أخرى</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="partner-website">Website</label>
+                        <label for="partner-website">الموقع الإلكتروني</label>
                         <input type="url" id="partner-website">
                     </div>
                     <div class="form-group">
-                        <label for="partner-description">Tell us about your organization and partnership interest *</label>
+                        <label for="partner-description">أخبرنا عن مؤسستك واهتمامك بالشراكة *</label>
                         <textarea id="partner-description" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit Partnership Request</button>
+                    <button type="submit" class="btn btn-primary">إرسال طلب الشراكة</button>
                 </form>
                 <div id="partnership-success" class="success-message" style="display:none;">
-                    ✅ Partnership request submitted! We'll review and get back to you soon.
+                    ✅ تم إرسال طلب الشراكة! سنراجعه ونعود إليك قريباً.
                 </div>
             </div>
         </section>
@@ -184,8 +184,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Date Pits Platform. All rights reserved.</p>
-            <p>Building a sustainable future, one date pit at a time. 🌱</p>
+            <p>&copy; 2024 منصة نوى التمر. جميع الحقوق محفوظة.</p>
+            <p>نبني مستقبلاً مستداماً، نواة تمر تلو الأخرى. 🌱</p>
         </div>
     </footer>
 
