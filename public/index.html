@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Pits Platform - Donate, Buy, Partner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">🌴 Date Pits Platform</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#buy">Buy</a></li>
+                    <li><a href="#partner">Partner</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Turn Date Pits Into Sustainable Resources</h2>
+                <p>Join our mission to collect, process, and distribute date pits for sustainable purposes</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3 id="total-donations">0</h3>
+                        <p>Donations</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="total-purchases">0</h3>
+                        <p>Purchases</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="total-partnerships">0</h3>
+                        <p>Partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="donate" class="section">
+            <div class="container">
+                <h2>Donate Date Pits</h2>
+                <p class="section-description">Have date pits you'd like to donate? Help us create sustainable products!</p>
+                <form id="donation-form" class="form">
+                    <div class="form-group">
+                        <label for="donate-name">Your Name *</label>
+                        <input type="text" id="donate-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donate-email">Email *</label>
+                        <input type="email" id="donate-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donate-quantity">Approximate Quantity (kg) *</label>
+                        <input type="number" id="donate-quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donate-location">Location *</label>
+                        <input type="text" id="donate-location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donate-message">Additional Message</label>
+                        <textarea id="donate-message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Donation</button>
+                </form>
+                <div id="donation-success" class="success-message" style="display:none;">
+                    ✅ Thank you for your donation! We'll contact you soon.
+                </div>
+            </div>
+        </section>
+
+        <!-- Purchase Section -->
+        <section id="buy" class="section bg-light">
+            <div class="container">
+                <h2>Buy Date Pits</h2>
+                <p class="section-description">Need date pits for your business or project? Order here!</p>
+                <div class="price-info">
+                    <p><strong>Price:</strong> $5 per kg</p>
+                    <p><strong>Minimum Order:</strong> 10 kg</p>
+                </div>
+                <form id="purchase-form" class="form">
+                    <div class="form-group">
+                        <label for="buy-name">Your Name *</label>
+                        <input type="text" id="buy-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buy-email">Email *</label>
+                        <input type="email" id="buy-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buy-phone">Phone Number *</label>
+                        <input type="tel" id="buy-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buy-quantity">Quantity (kg) *</label>
+                        <input type="number" id="buy-quantity" min="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buy-address">Delivery Address *</label>
+                        <textarea id="buy-address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <p class="total-price">Total Price: $<span id="total-price">0</span></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </form>
+                <div id="purchase-success" class="success-message" style="display:none;">
+                    ✅ Order received! We'll contact you to confirm payment and delivery.
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership Section -->
+        <section id="partner" class="section">
+            <div class="container">
+                <h2>Partnership Opportunities</h2>
+                <p class="section-description">Join us as a partner in our sustainable date pits initiative</p>
+                <div class="partnership-types">
+                    <div class="partnership-card">
+                        <h3>Collection Partner</h3>
+                        <p>Help us collect date pits from your area</p>
+                    </div>
+                    <div class="partnership-card">
+                        <h3>Processing Partner</h3>
+                        <p>Transform date pits into valuable products</p>
+                    </div>
+                    <div class="partnership-card">
+                        <h3>Distribution Partner</h3>
+                        <p>Distribute products to end users</p>
+                    </div>
+                </div>
+                <form id="partnership-form" class="form">
+                    <div class="form-group">
+                        <label for="partner-org">Organization Name *</label>
+                        <input type="text" id="partner-org" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-contact">Contact Person *</label>
+                        <input type="text" id="partner-contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-email">Email *</label>
+                        <input type="email" id="partner-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-phone">Phone Number *</label>
+                        <input type="tel" id="partner-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-type">Partnership Type *</label>
+                        <select id="partner-type" required>
+                            <option value="">Select Type</option>
+                            <option value="collection">Collection Partner</option>
+                            <option value="processing">Processing Partner</option>
+                            <option value="distribution">Distribution Partner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-website">Website</label>
+                        <input type="url" id="partner-website">
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-description">Tell us about your organization and partnership interest *</label>
+                        <textarea id="partner-description" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Partnership Request</button>
+                </form>
+                <div id="partnership-success" class="success-message" style="display:none;">
+                    ✅ Partnership request submitted! We'll review and get back to you soon.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Date Pits Platform. All rights reserved.</p>
+            <p>Building a sustainable future, one date pit at a time. 🌱</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
