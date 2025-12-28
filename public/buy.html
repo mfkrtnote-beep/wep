@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شراء نوى التمر | نواة مباركة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/nawat-mubaraka-logo.png" alt="نواة مباركة - وقف ينمو بالأجر" class="logo-image">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#about">عن المبادرة</a></li>
+                    <li><a href="index.html#problem">المشكلة</a></li>
+                    <li><a href="index.html#solution">الحل</a></li>
+                    <li><a href="donate.html">تبرع</a></li>
+                    <li><a href="buy.html" class="active">اشترِ</a></li>
+                    <li><a href="index.html#partner">شارك</a></li>
+                    <li><a href="index.html#contact">تواصل معنا</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Purchase Section -->
+    <section id="buy" class="buy section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">اشترِ</span>
+                <h2 class="section-title">شراء نوى التمر</h2>
+                <p class="section-description">هل تحتاج نوى التمر لمشروعك أو عملك؟ اطلب من هنا!</p>
+            </div>
+
+            <div class="price-info">
+                <div class="price-item">
+                    <span class="price-label">السعر:</span>
+                    <span class="price-value">5 دولار للكيلوجرام</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">الحد الأدنى للطلب:</span>
+                    <span class="price-value">10 كجم</span>
+                </div>
+            </div>
+
+            <form id="purchase-form" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="buy-name">اسمك *</label>
+                        <input type="text" id="buy-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buy-email">البريد الإلكتروني *</label>
+                        <input type="email" id="buy-email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="buy-phone">رقم الهاتف *</label>
+                        <input type="tel" id="buy-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="buy-quantity">الكمية (كجم) *</label>
+                        <input type="number" id="buy-quantity" min="10" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="buy-address">عنوان التوصيل *</label>
+                    <textarea id="buy-address" rows="3" required></textarea>
+                </div>
+
+                <div class="total-price-display">
+                    <span>السعر الإجمالي:</span>
+                    <span class="total-amount"><span id="total-price">0</span> دولار</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">تأكيد الطلب</button>
+            </form>
+
+            <div id="purchase-success" class="success-message" style="display:none;">
+                ✅ تم استلام طلبك! سنتواصل معك لتأكيد الدفع والتوصيل.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 نواة مباركة | جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
