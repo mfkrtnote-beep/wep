@@ -693,10 +693,13 @@ body {
 
 /* Quick Access Section */
 .quick-access-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .access-card {
@@ -917,14 +920,17 @@ body {
     
     .about-grid,
     .solution-steps,
-    .contact-grid,
-    .quick-access-grid {
+    .contact-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
     .access-card {
         padding: 2rem 1.5rem;
+    }
+    
+    .quick-access-grid {
+        max-width: 100%;
     }
     
     .access-icon {
