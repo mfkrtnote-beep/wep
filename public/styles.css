@@ -691,6 +691,56 @@ body {
     font-weight: 600;
 }
 
+/* Quick Access Section */
+.quick-access-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.access-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.access-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.access-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.access-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.access-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+}
+
+.access-card .btn {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /* Footer */
 .footer {
     background: var(--dark-color);
@@ -867,9 +917,18 @@ body {
     
     .about-grid,
     .solution-steps,
-    .contact-grid {
+    .contact-grid,
+    .quick-access-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .access-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .access-icon {
+        font-size: 3rem;
     }
     
     .form-row {
