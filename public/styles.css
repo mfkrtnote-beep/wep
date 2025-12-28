@@ -762,8 +762,17 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
     .navbar .container {
         flex-wrap: wrap;
+    }
+    
+    .logo-image {
+        height: 50px;
+        max-width: 180px;
     }
     
     .menu-toggle {
@@ -776,30 +785,94 @@ body {
         flex-direction: column;
         padding: 1rem 0;
         gap: 1rem;
+        background: white;
     }
     
     .nav-menu.active {
         display: flex;
     }
     
+    .nav-menu a {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero-logo-image {
+        max-height: 120px;
+        max-width: 300px;
+    }
+    
+    .hero-badge {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 10px;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
     }
     
     .hero-cta {
         flex-direction: column;
+        gap: 1rem;
     }
     
     .btn {
         width: 100%;
         text-align: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .about-grid,
+    .solution-steps,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
     }
 }
