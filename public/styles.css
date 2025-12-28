@@ -780,12 +780,10 @@ body {
     box-shadow: 0 5px 20px rgba(139, 69, 19, 0.3);
 }
 
-/* Combined Donate Explanation and Button */
+/* Donate Call-to-Action Section */
 .donate-explanation a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    background: var(--gradient) !important;
-    color: white !important;
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(139, 69, 19, 0.4) !important;
 }
 
 /* Footer */
