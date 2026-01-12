@@ -691,6 +691,271 @@ body {
     font-weight: 600;
 }
 
+/* Quick Access Section */
+.quick-access-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.access-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.access-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.access-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.access-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.access-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+}
+
+.access-card .btn {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.access-card .btn-outline {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.access-card .btn-outline:hover {
+    background: var(--gradient);
+    color: white;
+    border-color: transparent;
+}
+
+.access-card .btn-primary {
+    background: var(--gradient);
+    color: white;
+    border: none;
+}
+
+.access-card .btn-primary:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(139, 69, 19, 0.3);
+}
+
+.access-card .btn-secondary {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+}
+
+.access-card .btn-secondary:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(139, 69, 19, 0.3);
+}
+
+/* Donate Call-to-Action Section */
+.donate-explanation a:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(139, 69, 19, 0.4) !important;
+}
+
+/* Thank You Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    border-radius: 25px;
+    max-width: 650px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s ease;
+    z-index: 10000;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: #999;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background: #f0f0f0;
+    color: var(--primary-color);
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    text-align: center;
+    padding: 3rem 2rem 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.modal-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.modal-header h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.modal-body {
+    padding: 2.5rem 3rem;
+    line-height: 2;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.modal-greeting {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 2rem !important;
+}
+
+.modal-thanks {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    text-align: center !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.modal-signature {
+    text-align: center !important;
+    color: #666;
+    font-size: 1.05rem;
+    margin-bottom: 0 !important;
+}
+
+.modal-footer {
+    padding: 1.5rem 3rem 3rem;
+    text-align: center;
+}
+
+.modal-footer .btn {
+    min-width: 200px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .modal-body {
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .modal-header {
+        padding: 2.5rem 1.5rem 1rem;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-footer {
+        padding: 1rem 1.5rem 2rem;
+    }
+}
+
 /* Footer */
 .footer {
     background: var(--dark-color);
@@ -762,8 +1027,17 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
     .navbar .container {
         flex-wrap: wrap;
+    }
+    
+    .logo-image {
+        height: 50px;
+        max-width: 180px;
     }
     
     .menu-toggle {
@@ -776,30 +1050,106 @@ body {
         flex-direction: column;
         padding: 1rem 0;
         gap: 1rem;
+        background: white;
     }
     
     .nav-menu.active {
         display: flex;
     }
     
+    .nav-menu a {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero-logo-image {
+        max-height: 120px;
+        max-width: 300px;
+    }
+    
+    .hero-badge {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 10px;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
     }
     
     .hero-cta {
         flex-direction: column;
+        gap: 1rem;
     }
     
     .btn {
         width: 100%;
         text-align: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .about-grid,
+    .solution-steps,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .access-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .quick-access-grid {
+        max-width: 100%;
+    }
+    
+    .access-icon {
+        font-size: 3rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
     }
 }

@@ -53,10 +53,8 @@ if (donationForm) {
 
             if (response.ok) {
                 donationForm.reset();
-                document.getElementById('donation-success').style.display = 'block';
-                setTimeout(() => {
-                    document.getElementById('donation-success').style.display = 'none';
-                }, 5000);
+                // Show thank you modal instead of simple message
+                showThankYouModal();
                 updateStats();
             } else {
                 alert('خطأ في إرسال التبرع. يرجى المحاولة مرة أخرى.');
@@ -228,4 +226,36 @@ document.querySelectorAll('.section').forEach(section => {
     section.style.transform = 'translateY(20px)';
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
+});
+
+// Thank You Modal Functions
+function showThankYouModal() {
+    const modal = document.getElementById('thankYouModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeThankYouModal() {
+    const modal = document.getElementById('thankYouModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', (e) => {
+    const modal = document.getElementById('thankYouModal');
+    if (modal && e.target === modal) {
+        closeThankYouModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeThankYouModal();
+    }
 });
